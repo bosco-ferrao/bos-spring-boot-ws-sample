@@ -1,0 +1,6 @@
+janel.main.class=${janel.main.class}
+-Djava.class.path=lib
+janel.classpath.jars.dir=lib
+janel.java.home.path=../../../../dist/jre
+-XX:+UseSplitVerifier
+-XX:+FailOverToOldVerifier

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Get Weather</title>
+    <link th:href="@{/resources/css/jquery-ui.theme.min.css}"
+          rel="stylesheet"/>
+    <link th:href="@{/resources/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/resources/css/keyboard.css}" rel="stylesheet"/>
+    <link th:href="@{/resources/css/style.css}" rel="stylesheet"/>
+</head>
+<script th:inline="javascript">
+var contextPath = /*[[@{/}]]*/;
+
+</script>
+<body ng-app="WeatherApp">
+
+<div ui-view="content"></div>
+
+<script th:src="@{/resources/js/jquery-1.11.1.min.js}"></script>
+<script th:src="@{/resources/js/jquery-ui.min.js}"></script>
+<script th:src="@{/resources/js/bootstrap.min.js}"></script>
+<script th:src="@{/resources/js/angular.min.js}"></script>
+<script th:src="@{/resources/js/angular-messages.min.js}"></script>
+<script th:src="@{/resources/js/angular-ui-router.js}"></script>
+<script th:src="@{/resources/js/angular-resource.min.js}"></script>
+<script th:src="@{/resources/js/jquery.keyboard.min.js}"></script>
+<script th:src="@{/resources/js/angular-route.min.js}"></script>
+<script th:src="@{/resources/js/angular/app.js}"></script>
+<script th:src="@{/resources/js/angular/services.js}"></script>
+<script th:src="@{/resources/js/angular/controllers.js}"></script>
+<script th:src="@{/resources/js/angular/kill-app-directive.js}"></script>
+<script th:src="@{/resources/js/xml2json.min.js}"></script>
+
+</body>
+</html>

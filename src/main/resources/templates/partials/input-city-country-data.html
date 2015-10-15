@@ -1,0 +1,34 @@
+<div class="text-center rounded-box" ng-app="WeatherApp" ng-controller="LookupDataController">
+    <form name="myForm">
+
+        <div ng-messages="myForm.cityName.$error" role="alert">
+            <div>
+                City name:
+            </div>
+        </div>
+        <input type="text" name="cityName" ng-model="cityName" class="form-control" required="true"/>
+        
+        <div ng-messages="myForm.countryName.$error" role="alert">
+            <div>
+                Country name:
+            </div>
+        </div>
+        <input type="text" name="countryName" ng-model="countryName" class="form-control" required="true"/>
+    </form>
+    
+    <div ng-show="CurrentWeather.Temperature">
+    	Temperature:{{CurrentWeather.Temperature}}
+    </div>
+
+    <div class="lg-margin-top">
+        <input type="submit" value="Submit" class="btn btn-lg btn-primary" ng-click="submit()"/>
+        <killapp></killapp>
+    </div>
+
+</div>
+
+<script>
+    $(function(){
+        $('.keyboard').keyboard({layout : 'num'});
+    });
+</script>

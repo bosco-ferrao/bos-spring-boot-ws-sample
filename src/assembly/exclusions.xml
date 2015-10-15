@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fingerprint-exclusions>	
+	<non-checksummed-defaults-included/>
+	<full-exclusion>.*\.log</full-exclusion>
+</fingerprint-exclusions>
